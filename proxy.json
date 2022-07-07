@@ -1,0 +1,28 @@
+{
+    "ding": {
+        "appKey": "",
+        "appSecret": ""
+    },
+    "service": [
+        {
+            "listen": 8087,
+            "ssl": true,
+            "serverName": "serverName",
+            "redirectUrl": "http://192.168.1.115:8096",
+            "authByDing": true,
+            "whiteIp": "182.92.237.124"
+        },
+        {
+            "listen": 8087,
+            "serverName": "serverName",
+            "redirectUrl": "http://192.168.1.115:8082",
+            "authByDing": true,
+            "redirectHold": true,
+            "redirects": [{
+                "path": "/openapi",
+                "ignore": true
+            }],
+            "whiteIp": "182.92.237.124"
+        }
+    ]
+}
