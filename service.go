@@ -168,6 +168,7 @@ func toProxy(w http.ResponseWriter, r *http.Request, innerUrl string) {
 			req.URL.Scheme = target.Scheme
 			req.URL.Host = target.Host
 			req.URL.Path, req.URL.RawPath = joinURLPath(target, req.URL)
+			req.Host = target.Host
 			if targetQuery == "" || req.URL.RawQuery == "" {
 				req.URL.RawQuery = targetQuery + req.URL.RawQuery
 			} else {
