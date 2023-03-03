@@ -14,7 +14,7 @@
             "listen": 8087, // 监听端口
             "ssl": true, // 是否是https
             "serverName": "serverName", // 域名
-            "redirectUrl": "http://192.168.1.115:8096", // 代理地址
+            "redirectUrl": "https://api.openai.com", // 代理地址
             "authByDing": true, // 是否钉钉授权
             "whiteIp": "182.92.237.124" // 白名单 ,分隔
         },
